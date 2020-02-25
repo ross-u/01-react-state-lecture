@@ -1,10 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import AppWConstructor from "./AppWConstructor";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import * as serviceWorker from "./serviceWorker";
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+/* 
+// Example of passing props to set the initial state.
+ReactDOM.render(
+  <AppWConstructor startCount={10} />,
+  document.getElementById("root")
+); 
+*/
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
